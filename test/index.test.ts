@@ -4,6 +4,10 @@ test('timeRangeTransform 1',()=>{
     expect(timeRangeTransform(1,)).toBe('1秒')
 })
 
+test('timeRangeTransform 1.3',()=>{
+    expect(timeRangeTransform(1.3,)).toBe('1秒')
+})
+
 test('timeRangeTransform 60',()=>{
     expect(timeRangeTransform(60)).toBe('1分钟')
 })

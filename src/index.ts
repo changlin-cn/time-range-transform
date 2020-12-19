@@ -10,7 +10,7 @@ export function timeRangeTransform(second: number, config: timeRangeTransformCon
     let surplus = second;
     while (surplus > 0) {
         if (surplus < 60) {
-            res += `${surplus}${localString.second}`;
+            res += `${Math.floor(surplus)}${localString.second}`;
             break;
         }
         if (surplus < 3600) {
